@@ -3,10 +3,12 @@ package org.pluralsight.model;
 public class Customer {
 
 	private String firstname;
+
 	private String lastname;
 
-	public Customer() {}
-	
+	public Customer() {
+	}
+
 	public String getFirstname() {
 		return firstname;
 	}
@@ -21,6 +23,11 @@ public class Customer {
 
 	public void setLastname(String lastname) {
 		this.lastname = lastname;
+	}
+
+	@Override
+	public String toString() {
+		return "Customer [firstname=" + firstname + ", lastname=" + lastname + "]";
 	}
 
 }
